@@ -1,0 +1,19 @@
+server:
+  port: 10101
+
+cluster:
+  host: 10.141.212.146
+  port: 31380
+
+spring:
+  datasource:
+    url: jdbc:mysql://10.141.212.21:3306/ai_ops
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jooq:
+    sql-dialect: org.hibernate.dialect.MySQL5Dialect
